@@ -16,13 +16,16 @@ count	|
 ### 2. How many unique customer orders were made?
 
 ```TSQL
-SELECT COUNT(*)
+SELECT COUNT(DISTINCT order_id)
 FROM customer_orders1;
 ```
 
 count	| 
  --- |
 10 |	
+
+I accidentally copy and pasted the same code with question 1.
+I fixed it on June 4, 2023.
 
 ---
 
@@ -44,7 +47,9 @@ ORDER BY runner_id;
 
 ---
 
-### 4. How many successful orders were delivered by each runner?
+### 4. How many of each type of pizza was delivered?
+
+The question stated above was wrong. I fixed it on June 4, 2023.
 
 ```TSQL
 SELECT pizza_id, COUNT(pizza_id)
@@ -58,7 +63,6 @@ GROUP BY pizza_id;
 |-----------|---------------------|
 | 1         | 9                   |
 | 2         | 3                   |
-
 
 ---
 
