@@ -41,13 +41,11 @@ WHERE cancellation IS NULL;
 
 ### 3. The Pizza Runner team now wants to add an additional ratings system that allows customers to rate their runner, how would you design an additional table for this new dataset - generate a schema for this new table and insert your own data for ratings for each successful customer order between 1 to 5.
 
-We can answer to this question easily using the table we made for Q2.
-
 ```TSQL
 DROP TABLE IF EXISTS ratings;
 CREATE TABLE ratings  (
   "order_id" INTEGER,
-  "rating" INTEGER CONSTRAINT check1to5_raating CHECK (
+  "rating" INTEGER CONSTRAINT check1to5_rating CHECK (
      "rating" between 1 and 5),
   "comment" VARCHAR(150)
 );
