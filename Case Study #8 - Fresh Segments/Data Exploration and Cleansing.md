@@ -69,7 +69,9 @@ FULL JOIN interest_map map ON met.interest_id=map.id;
 
 | not_in_map | not_in_met |
 |-------------------------|-------------|
-| 1200                  | 1193 |
+| 7                  | null |
+
+There was a mistake in the result table. I fixed it on July 3, 2023.
 
 ---
 
