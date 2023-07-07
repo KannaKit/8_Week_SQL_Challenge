@@ -59,7 +59,22 @@ Most questions can be answered using a single query however some questions are m
   4. For the 5 interests found in the previous question - what was minimum and maximum `percentile_ranking` values for each interest and its corresponding `year_month` value? Can you describe what is happening for these 5 interests?
 
 ▶️ **Check my solution [HERE](https://github.com/KannaKit/8_Week_SQL_Challenge/blob/main/Case%20Study%20%238%20-%20Fresh%20Segments/Segment%20Analysis.md)**
-  
+
+---
+
+### 📒 Index Analysis
+
+The `index_value` is a measure which can be used to reverse calculate the average `composition` for Fresh Segments’ clients.
+
+Average composition can be calculated by dividing the composition column by the `index_value` column rounded to 2 decimal places.
+
+1. What is the top 10 interests by the average composition for each month?
+2. For all of these top 10 interests - which interest appears the most often?
+3. What is the average of the average composition for the top 10 interests for each month?
+4. What is the 3 month rolling average of the max average composition value from September 2018 to August 2019 and include the previous top ranking interests in the same output shown below.
+
+▶️ **Check my solution [HERE](https://github.com/KannaKit/8_Week_SQL_Challenge/blob/main/Case%20Study%20%238%20-%20Fresh%20Segments/Index%20Analysis.md)**
+
 ---
   
 ## 👩‍💻 Data Visualization
